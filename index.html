@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample page</title>
+	<meta name="viewport" content="device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="images/logo.png" class="logo">
+			<nav>
+				
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Office</a></li>
+					<li><a href="">Hotels</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Others</a></li>
+				</ul>
+			</nav>
+			<img src="images/menu.png" class="menu-icon">
+		</div>
+
+		<div class="row">
+		<div class="col">
+			<div class="text-box">
+				<h5>Our Products</h5>
+				<h1><b>Simplicity </b><br>is the <b>ultimate </b>sophistication</h1>
+			</div>
+			</div>
+
+
+		<div class="gallery_box">
+			<img src="images/mb.jpg" id="gallery">
+			<ul>
+				<li class="btn">01</li>
+				<li class="btn active">02</li>
+				<li class="btn">03</li>
+				<li class="btn">04</li>
+				<li class="btn">05</li>
+			</ul>
+
+		</div>
+
+
+	</div>
+
+	</div>
+	<div class="icons">
+				<img src="images/circle.png">
+			</div>
+				<div class="icons1">
+				<img src="images/play.png">
+			</div>
+				<div class="icons2">
+				<img src="images/diamond.png">
+			</div>
+				<div class="icons3">
+				<img src="images/play.png">
+			</div>
+<script>
+	var pic= getElementById("gallery");
+	var btn = document.getElementByClassName("btn");
+	var images = new Array(
+			"images/comp.jpg",
+			"images/mon.jpg",
+			"images/btn.jpg",
+			"images/kb.jpg",
+			"images/mb.jpg" 
+			);
+
+			for (let i = 0; i < btn.length; i++); 
+					{
+						btn[i].onclick=function(){
+						 gallery.src=images[i];
+					};
+</script>
+		
+
+
+
+
+</body>
+</html>
